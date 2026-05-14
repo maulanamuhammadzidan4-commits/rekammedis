@@ -1,0 +1,118 @@
+/* Reset & Pengaturan Dasar */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Background dengan gradasi bernuansa medis yang tenang */
+body {
+    background: linear-gradient(135deg, #e0f2fe 0%, #f8fafc 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #1e293b;
+}
+
+/* Kartu Diagnosa */
+.card {
+    background: #ffffff;
+    padding: 40px 32px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 450px;
+    border-top: 6px solid #0284c7; /* Aksen warna biru medis */
+}
+
+.card h2 {
+    color: #0284c7;
+    margin-bottom: 16px;
+    font-size: 1.75rem;
+}
+
+.card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 12px;
+    color: #334155;
+}
+
+.card p span {
+    font-weight: 600;
+    color: #0284c7;
+}
+
+/* Area Input Diagnosa */
+.diagnosa-input {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.diagnosa-input label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #334155;
+    margin-bottom: 2px;
+}
+
+/* Textarea Field */
+.diagnosa-input textarea {
+    width: 100%;
+    height: 120px;
+    padding: 14px;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #1e293b;
+    outline: none;
+    resize: vertical;
+    transition: border-color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.diagnosa-input textarea:focus {
+    border-color: #0284c7;
+    background-color: #f0f9ff;
+    box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.2);
+}
+
+/* Tombol Utama (Kirim) */
+.diagnosa-input button {
+    width: 100%;
+    background-color: #0284c7;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+}
+
+.diagnosa-input button:hover {
+    background-color: #0369a1;
+    box-shadow: 0 4px 6px -1px rgba(2, 132, 199, 0.3);
+}
+
+.diagnosa-input button:active {
+    transform: scale(0.98);
+}
+
+/* Tombol Sekunder (Lihat Hasil Diagnosa) */
+.diagnosa-input #lihat {
+    background-color: transparent;
+    color: #0284c7;
+    border: 1.5px solid #0284c7;
+    margin-top: -4px;
+}
+
+.diagnosa-input #lihat:hover {
+    background-color: #f0f9ff;
+    box-shadow: none;
+}

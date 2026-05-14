@@ -1,0 +1,97 @@
+/* Reset & Pengaturan Dasar */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #e0f2fe 0%, #f8fafc 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #1e293b;
+    padding: 24px;
+}
+
+/* Kartu Rekam Medis Dokter */
+.card {
+    background: #ffffff;
+    padding: 40px 32px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 800px;
+    border-top: 6px solid #0284c7; /* Aksen warna biru medis */
+}
+
+h2 {
+    color: #0f172a;
+    margin-bottom: 8px;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+p {
+    font-size: 1.05rem;
+    color: #475569;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 28px;
+}
+
+th, td {
+    padding: 14px 16px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 1rem;
+}
+
+th {
+    background-color: #f8fafc;
+    color: #334155;
+    font-weight: 600;
+    border-bottom: 2px solid #cbd5e1;
+}
+
+tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+tbody tr:hover {
+    background-color: #f0f9ff;
+}
+
+td {
+    color: #1e293b;
+}
+
+/* Tombol Diagnosa */
+#diagnosa {
+    width: 100%;
+    background-color: #0284c7;
+    color: #ffffff;
+    border: none;
+    padding: 14px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+}
+
+#diagnosa:hover {
+    background-color: #0369a1;
+    box-shadow: 0 4px 6px -1px rgba(2, 132, 199, 0.3);
+}
+
+#diagnosa:active {
+    transform: scale(0.98);
+}

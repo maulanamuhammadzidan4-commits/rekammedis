@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="keluhan.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="card">
+        <h2>Input Rekam Medis</h2>
+        <p>Hai <span id="patient"></span>.</p>
+        <textarea name="keluhan" id="keluhan" placeholder="Masukkan keluhan Anda disini..."></textarea>
+        <p id="alert"></p>
+        <p id="alertK"></p>
+        <button onclick="send()">Kirim</button>
+        <label for="lihat">Lihat hasil diagnosa dokter</label>
+        <button onclick="look()" id="lihat">Enter</button>
+    </div>
+
+    <script src="keluhan.js"></script>
+</body>
+</html>

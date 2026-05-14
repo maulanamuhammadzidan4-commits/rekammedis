@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rekam Medis Pasien</title>
+    <link rel="stylesheet" href="rekam_medis.css">
+</head>
+<body>
+    <div class="card">
+        <h2>Rekam Medis Pasien</h2>
+        <p>Hai <span id="doctor"></span>.</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Nama Pasien</th>
+                <th>Keluhan</th>
+            </tr>
+        </thead>
+        <tbody id="output"></tbody>
+    </table>
+    <button id="diagnosa" onclick="diagnosa()">Mulai Diagnosa</button>
+    </div>
+
+    <script src="rekam_medis.js"></script>
+</body>
+</html>

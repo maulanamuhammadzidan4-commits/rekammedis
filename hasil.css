@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #e0f2fe 0%, #f8fafc 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #1e293b;
+}
+
+.card {
+    background: #ffffff;
+    padding: 40px 32px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 450px;
+    border-top: 6px solid #0284c7; /* Aksen warna biru medis */
+    text-align: center; /* Mengatur agar semua teks di dalam kartu berada di tengah */
+}
+
+.card h2 {
+    color: #0284c7;
+    margin-bottom: 24px;
+    font-size: 1.75rem;
+}
+
+.card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 14px;
+    color: #334155;
+}
+
+.card p span {
+    font-weight: 600;
+    color: #0284c7;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #0284c7;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    background-color: #0369a1;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+button:disabled {
+    background-color: #94a3b8;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+#alertD {
+    margin-top: 16px;
+    color: #dc2626;
+    font-weight: 600;
+}

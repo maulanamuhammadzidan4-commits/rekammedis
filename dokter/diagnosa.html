@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnosa</title>
+    <link rel="stylesheet" href="diagnosa.css">
+</head>
+<body>
+    <div class="card">
+        <h2>Diagnosa</h2>
+        <p>Hai <span id="doctor"></span>. Silahkan lakukan diagnosa untuk <span id="pasien"></span>.</p>
+        <p>Seorang pasien dengan keluhan: <span id="keluhan"></span></p>
+        <div class="diagnosa-input">
+            <label for="diagnosa">Masukkan hasil diagnosa Anda disini...</label>
+            <textarea name="diagnosa" id="diagnosa" placeholder="Masukkan hasil diagnosa Anda disini..."></textarea>
+            <button onclick="sendDiagnosa()">Kirim</button>
+            <label for="lihat">Lihat hasil diagnosa pasien</label>
+            <button onclick="lookDiagnosa()" id="lihat">Enter</button>
+        </div>
+    </div>
+
+    <script src="diagnosa.js"></script>
+</body>
+</html>

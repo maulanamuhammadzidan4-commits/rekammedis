@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pasien</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Pendataan Pasien</h1> 
+    <div class="login-card">
+        <div class="login-label">
+            <label for="">Nama</label>
+            <input type="text" id="user-name" required>
+        </div>
+        <div class="login-label">
+            <label for="">Umur</label>
+            <input type="text" id="user-age" required>
+        </div>
+        <div class="login-label">
+            <input type="radio" name="gender" id="user-gender1" value="pria" required>
+            <label for="user-gender1">Pria</label>
+            <input type="radio" name="gender" id="user-gender2" value="wanita" required>
+            <label for="user-gender2">Wanita</label>
+        </div>
+        <div class="login-label">
+            <label for="user-alamat">Alamat</label>
+            <input type="text" id="user-alamat" required>
+        </div>
+        <div class="login-label">
+            <label for="user-hp">No. Telepon</label>
+            <input type="text" id="user-hp" required>
+        </div>
+        <div class="login-label">
+            <label for="user-email">Email</label>
+            <input type="email" id="user-email" required>
+            <p id="alert"></p>
+        </div>
+        <button id="btn-masuk" onclick="masuk()">Masuk</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
