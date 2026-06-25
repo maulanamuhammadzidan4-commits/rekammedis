@@ -31,5 +31,6 @@ function loadResult() {
     } else {
         document.querySelector('#alertD').textContent = 'Data diagnosa belum ada.';
         document.querySelector('.card').style.display = 'none';
+        document.querySelector('#loadResultBtn').style.display = 'none';
     }
 }
