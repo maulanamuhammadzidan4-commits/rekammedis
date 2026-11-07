@@ -13,7 +13,7 @@ document.querySelector('#diagnosa').textContent = `${diagnosa}`;
 function clearStorage() {
     localStorage.clear();
     alert('Data berhasil dihapus!');
-    window.location.href = 'index.html';
+    window.location.href = '../index.html';
 }
 
 function loadResult() {

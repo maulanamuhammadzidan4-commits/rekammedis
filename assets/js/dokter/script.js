@@ -14,7 +14,7 @@ function login(){
     let notUser = !(doctorList.find(doctor => doctor.nama === ngaran && doctor.pw === pass));
 
     if (notUser){
-        window.location.href = '../index.html';
+        window.location.href = '../../index.html';
     } else if(user){
         window.location.href = 'rekam_medis.html';
         localStorage.setItem('namaDokter', ngaran);
